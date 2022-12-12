@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 100vh;
+
+  background-image: linear-gradient(
+    to right bottom,
+    #efbcbf,
+    #f0c6cf,
+    #f0d0dc,
+    #f0dbe7,
+    #f1e5f0,
+    #efe4f2,
+    #ece3f3,
+    #e9e3f5,
+    #ded9f4,
+    #d1cff2,
+    #c2c6f2,
+    #b0bef1
+  );
+}
+.container {
+  background-color: rgba(245, 247, 255, 0.85);
+  border-radius: 10px;
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .img img {
+    height: 315px;
+  }
+
+  p.text-desc {
+    font-size: 1.5rem;
+  }
+  .btn {
+    background: linear-gradient(113.87deg, #2663df 14.81%, #758ff0 88.76%);
+    box-shadow: 0px 6px 18px #9cadf2;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .sign-up {
+    .input-group {
+      flex-wrap: wrap;
+    }
+    .input-group * {
+      font-size: 0.9rem !important;
+    }
+    .form-control.is-invalid {
+      border-left: 1px solid #dc3545 !important ;
+    }
+    .img img {
+      @media (min-width: 768px) {
+        height: 535px;
+      }
+      height: 400px;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+
+    ul.invalid-feedback {
+      padding-left: 1rem;
+    }
+  }
+}
+
+/* ---------- S T A R T - H T M L - F O N T - S I Z E - R E S P O N S I V E  ---------- */
+@media screen and (max-width: 1199px) {
+  html {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 10px !important;
+  }
+}
+/* ---------- E N D - H T M L - F O N T - S I Z E - R E S P O N S I V E  ---------- */

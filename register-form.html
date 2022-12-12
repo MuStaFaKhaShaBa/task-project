@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/main.min.css">
+
+    <title>Sign up Page</title>
+</head>
+
+<body>
+
+    <div class="container py-5 px-lg-5 my-4">
+        <div class="sign-up row row-cols-md-2 px-5 gx-0 gx-md-5 gy-5 gy-md-0 align-items-center">
+            <div>
+                <div class="img">
+                    <img src="./imgs/Image Placeholder (1).png" class="w-100" alt="Sign up Image">
+                </div>
+            </div>
+            <div>
+                <div class="d-flex flex-column justify-content-center h-100 text-center text-md-start">
+                    <h1 class="fw-bold mb-3">Create Account</h1>
+                    <p class="text-desc mb-4">Go ahead and sign up, let everyone know how awesome you are!</p>
+
+                    <form action="" id="registerForm" class="d-flex flex-column gap-3">
+
+                        <div class="input-group rounded-3 border-0">
+                            <span class="input-group-text bg-white" id="username-input">
+                                <img src="./imgs/user.png" alt="user Icon">
+                            </span>
+                            <input type="text" name="username" class="form-control border-start-0 rounded-3 px-2 py-3"
+                                placeholder="Username" aria-label="Username" aria-describedby="username-input">
+                            <ul class="invalid-feedback text-start mb-0"></ul>
+                        </div>
+
+                        <div class="input-group rounded-3 border-0">
+                            <span class="input-group-text bg-white" id="email-input">
+                                <img src="./imgs/email.png" alt="Email Icon">
+                            </span>
+                            <input type="email" name="email" class="form-control border-start-0 rounded-3 px-2 py-3" placeholder="Email"
+                                aria-label="Email" aria-describedby="email-input">
+                            <ul class="invalid-feedback text-start mb-0"></ul>
+                        </div>
+
+                        <div class="input-group rounded-3 border-0">
+                            <span class="input-group-text bg-white" id="password-input">
+                                <img src="./imgs/password.png" alt="password Icon">
+                            </span>
+                            <input type="password" name="password" class="form-control border-start-0 rounded-3 px-2 py-3"
+                                placeholder="Password" aria-label="Password" aria-describedby="password-input">
+                            <ul class="invalid-feedback text-start mb-0"></ul>
+                        </div>
+
+                        <div class="input-group rounded-3 border-0">
+                            <span class="input-group-text bg-white" id="confirm-passowd-input">
+                                <img src="./imgs/password.png" alt="confirm Password Icon">
+                            </span>
+                            <input type="password" name="password_confirmation" class="form-control border-start-0 rounded-3 px-2 py-3"
+                                placeholder="Confirm Password" aria-label="Confirm Password"
+                                aria-describedby="confirm-passowd-input">
+                            <ul class="invalid-feedback text-start mb-0"></ul>
+                        </div>
+
+                        <button type="submit" class="btn text-white py-2 mt-2">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <!-- bootstrap Js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Main Js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
